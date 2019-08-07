@@ -12,4 +12,7 @@ Tasks:
 - Implement XmlTriangleSerializer utilizing XmlPointSerializer
 - Add interface `Shape` with method `String getType();`.
 - Make all shapes impelemts `Shape` interface.
-- 
+- Introduce new interface `Serializer<T extends Shape>` with method `void serialize(T shape, OutputStream out);`.
+- Make all serializers implements interface `Serializer`.
+- Add class `Group` that implements `Shape` and contains list of other Shapes inside.
+- Implement `XmlGroupSerializer`.
